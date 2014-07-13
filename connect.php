@@ -11,5 +11,5 @@ $hostname_mysqli = "localhost";
 $username_mysqli = "root";
 $password_mysqli = "junior/9,";
 $database_mysqli = "eventapp";
-
+$facebook_path = "http://localhost/eventProject/";
 ?>

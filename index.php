@@ -45,7 +45,7 @@ session_start();
 FacebookSession::setDefaultApplication( '563460800438057','36e24b9369287738867bc35e7cb54fdf' );
  
 // login helper with redirect_uri
-$helper = new FacebookRedirectLoginHelper( 'http://localhost/eventProject/index.php' );
+$helper = new FacebookRedirectLoginHelper( $facebook_path.'index.php' );
  
 // see if a existing session exists
 if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) ) {
