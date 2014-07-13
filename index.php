@@ -1,5 +1,7 @@
 <?php
- 
+ /* include the mysql connect file */
+ require_once('connect.php');
+
 // include required files form Facebook SDK
  
 // added in v4.0.5
@@ -43,7 +45,7 @@ session_start();
 FacebookSession::setDefaultApplication( '563460800438057','36e24b9369287738867bc35e7cb54fdf' );
  
 // login helper with redirect_uri
-$helper = new FacebookRedirectLoginHelper( 'http://localhost/index.php' );
+$helper = new FacebookRedirectLoginHelper( '/index.php' );
  
 // see if a existing session exists
 if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) ) {
@@ -89,7 +91,7 @@ if ( isset( $session ) ) {
   $graphObject = $response->getGraphObject()->asArray();
 
 
-  $db = new mysqli("localhost","root","test","eventapp");
+  $db = new mysqli($hostname_mysqli,$username_mysqli,$password_mysqli,$database_mysqli);
   if($db->connect_error)
   {
     die("Connect error ({$db->connect_errno}) {$db->connect_error}");

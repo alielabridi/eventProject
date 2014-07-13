@@ -4,6 +4,10 @@
 ## Author : Ali Elabridi
 ## Date 05/25/2014
 ############################################################
+
+/* include mysql connect file */
+require_once('/connect.php')
+
 include 'Download_Picture_function.php';
 	if( 
 		//to verify that the user went through the first page with the FB SDK JS
