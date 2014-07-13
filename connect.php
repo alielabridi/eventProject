@@ -7,4 +7,8 @@ try{
 	die("Error".$e->getMessage());
 }
 
+$hostname_mysqli = "localhost";
+$username_mysqli = "root";
+$password_mysqli = "junior/9,";
+$database_mysqli = "eventapp";
 ?>
