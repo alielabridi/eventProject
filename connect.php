@@ -1,7 +1,7 @@
 <?php
 
 try{
-	$connect = new PDO("mysql:host=localhost;dbname=eventapp",'root','junior/9,');
+	$connect = new PDO("mysql:host=localhost;dbname=eventapp",'root','');
 
 }catch(Exception $e){
 	die("Error".$e->getMessage());
